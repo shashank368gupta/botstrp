@@ -1,0 +1,28 @@
+<div id="<%= dom_id student %>">
+  <p>
+    <strong>First name:</strong>
+    <%= student.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= student.last_name %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= student.address %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= student.email %>
+  </p>
+
+  <p>
+    <% if student.avtar.attached? %>
+       <image src="<%= (url_for(student.avtar))%>">
+        <%end%>
+  </p>
+
+</div>
